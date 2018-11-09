@@ -1,0 +1,18 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  text-shadow: 2px 2px 8px #ababab;
+}
+
+
+a {
+  color: #00B7FF;
+}
+
+.deleteButton {
+  position: absolute;
+  bottom: 30px;
+}

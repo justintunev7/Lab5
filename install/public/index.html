@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comments!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="javascripts/comments.js"></script>
+</head>
+
+<body>
+    <h2 style="text-align:center; margin-top:0px;">Comment Discussion Board</h2>
+    <div class="row">
+        <div class="col-sm-6" style="background-color:#a6a6e4; padding:20px;height: 540px">
+            <form id="commentForm" action="">
+                <label for="name">Name: </label><input type="text" id="name" placeholder="Name" style="width:100%"><br><br>
+                <label for="comment">Comment: </label><input type="text" id="comment" placeholder="Comment" style="width:100%"><br><br>
+            </form>
+            <button id="postComment" type="button">Post Comment</button><br>
+            <div id="done"></div>
+            <br><br><br>
+
+            <form id="commentForm" action="">
+                <label for="name">Search Comments: </label><input type="text" id="query" placeholder="Name" style="width:100%"><br><br>
+                <button id="getComments" type="button">Search</button><br><br><br>
+            </form>
+
+        </div>
+        <div class="col-sm-6" style="background-color:#ffa6c4; padding:20px; height: 540px">
+            <h3 style="font-weight: bold; text-align:center; margin-top: 0px;">Comments</h3>
+            <div id="json"></div>
+            <div id="comments"></div>
+            <div class="deleteButton">
+                <button id="deleteComments" type="button">Delete All Comments</button><br>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="json"></div>
+    <div id="done"></div>
+    <div id="comments"></div>
+</body>
+
+</html>
